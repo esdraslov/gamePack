@@ -23,6 +23,7 @@ namespace game {
     }
 }
 namespace serial {
+    //% block="serial view player score"
     export function serialGamePoints () {
         serial.writeValue("score", game.score())
     }
