@@ -14,7 +14,7 @@ namespace game {
         sprite = kind
         game.createSprite(2, 2)
     }
-    //% block="create sprite %sprite of kind %kind"
+    //% block="show life %lifes"
     //% lifes.min=1 lifes.max=7
     export function showLife(lifes: number) {
         for(let i = 0; i < lifes; i++){
