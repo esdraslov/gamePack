@@ -9,10 +9,9 @@ namespace game {
         //% block="colletible"
         Colletible
     }
-    let newSprite
     //% block="create sprite %sprite of kind %kind"
-    export function setSprite(sprite: string, kind: Kind){
-        newSprite = kind
+    export function setSprite(sprite: any, kind: Kind){
+        sprite = kind
         game.createSprite(2, 2)
     }
 }
