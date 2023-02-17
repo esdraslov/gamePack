@@ -14,4 +14,16 @@ namespace game {
         sprite = kind
         game.createSprite(2, 2)
     }
+    //% block="create sprite %sprite of kind %kind"
+    //% lifes.min=1 lifes.max=7
+    export function showLife(lifes: number) {
+        for(let i = 0; i < lifes; i++){
+            led.plot(i, 0)
+        }
+    }
+    //% block="set life %value"
+    //% value.min=1 value.max=7
+    function setLife(value: number) {
+        game.setLife(value)
+    }
 }
