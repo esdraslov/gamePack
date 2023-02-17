@@ -21,9 +21,9 @@ namespace game {
             led.plot(i, 0)
         }
     }
-    //% block="set life %value"
-    //% value.min=0 value.max=7
-    function setLife(value: number) {
-        game.setLife(value)
+}
+namespace serial {
+    export function serialGamePoints () {
+        serial.writeValue("score", game.score())
     }
 }
