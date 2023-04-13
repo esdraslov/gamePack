@@ -17,7 +17,7 @@ namespace game {
     //% block="show life %lifes"
     //% lifes.min=1 lifes.max=7
     export function showLife(lifes: number) {
-        for(let i = 1; i < lifes; i++){
+        for(let i = 0; i < lifes; i++){
             led.plot(i, 0)
         }
     }
